@@ -11,6 +11,5 @@ https://www.cnblogs.com/ahmczsy/p/10544926.html
 
 
 
-ubuntu18安装mysql
-  https://baijiahao.baidu.com/s?id=1626805903141392082&wfr=spider&for=pc
-  https://www.cnblogs.com/ahmczsy/p/10489809.html
+ubuntu18安装mysql修改root默认密码
+      https://blog.csdn.net/qq_38737992/article/details/81090373
