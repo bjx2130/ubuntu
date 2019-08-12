@@ -1,0 +1,36 @@
+#! /bin/sh
+
+# Short-Description:    Container zookeeper based on LXC
+# Description:          Container zookeeper based on LXC
+# Provides:             lxd
+# Required-Start:       no
+# Required-Stop:        no
+# Default-Start:        2 3 4 5
+# Default-Stop:         0 1 6
+### END INIT INFO
+
+
+
+case "$1" in
+    start)
+       su -c '/opt/zookeeper-3.4.10/bin/zkServer.sh start'
+       exit 0
+    ;;
+
+    stop)
+          su -c '/opt/zookeeper-3.4.10/bin/zkServer.sh  stop'
+       exit 0
+    ;;
+
+    status)
+	  su -c '/opt/zookeeper-3.4.10/bin/zkServer.sh  status'
+	  exit 0
+     ;;
+     
+    restart)                                                                                                                                             su  -c '/opt/zookeeper-3.4.10/bin/zkServer.sh  restart'                                                       exit 0                                                                                                                                   ;;
+
+
+	*) echo 'require start|stop|status|restart'
+       exit 1
+    ;;
+esac
