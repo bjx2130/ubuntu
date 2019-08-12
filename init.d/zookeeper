@@ -27,8 +27,9 @@ case "$1" in
 	  exit 0
      ;;
      
-    restart)                                                                                                                                             su  -c '/opt/zookeeper-3.4.10/bin/zkServer.sh  restart'                                                       exit 0                                                                                                                                   ;;
-
+    restart)                                                                                                                                             
+    	  su  -c '/opt/zookeeper-3.4.10/bin/zkServer.sh  restart'                                                       
+	  exit 0                                                                                                                                   ;;
 
 	*) echo 'require start|stop|status|restart'
        exit 1
