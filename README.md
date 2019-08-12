@@ -27,3 +27,32 @@
       修改：sudo update-alternatives --install /usr/bin/java java /opt/jdk1.8.0_221/bin/java 300
       
       
+
+## ubuntu将程序加入服务
+      1.进入目录： cd /etc/init.d/
+      2.新建文件： sudo vi kafka
+      3.编辑内容
+            #!/bin/bash
+            #chkconfig:2345 20 90
+            #description:zookeeper
+            #processname:zookeeper
+            case $1 in
+                      start)
+                          #启动命令    
+                          /opt/kafka_2.12-1.0.0/bin/kafka-server-start.sh -daemon /opt/kafka_2.12-1.0.0/config/server.properties
+                          ;;
+                      stop)
+                          #停止命令    
+                          /opt/kafka_2.12-1.0.0/bin/kafka-server-stop.sh
+                          ;;
+                      restart)
+                          #重启命令    
+                          /opt/kafka_2.12-1.0.0/bin/kafka-server-stop.sh
+                          /opt/kafka_2.12-1.0.0/bin/kafka-server-start.sh -daemon /opt/kafka_2.12-1.0.0/config/server.properties
+                          ;;
+                      *)
+                          echo "require start|stop|restart"
+                          ;;
+            esac
+            
+        4.启动服务：sudo service kafka start
