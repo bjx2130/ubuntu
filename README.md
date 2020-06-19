@@ -50,3 +50,16 @@
             ========内容结束=========================================================================================
             
         4.启动服务：sudo service kafka start
+        
+        
+## ubuntu20安装软件
+      
+      docker安装
+            1、安装docker
+                  sudo apt install docker.io
+            2、创建docker用户组
+                  sudo groupadd docker
+            3、加入docker用户组
+                  sudo usermod -aG docker $USER
+            4、更新docker用户组
+                  newgrp docker
