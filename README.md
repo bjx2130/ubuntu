@@ -63,3 +63,11 @@
                   sudo usermod -aG docker $USER
             4、更新docker用户组
                   newgrp docker
+            5、修改镜像下载源      
+                  进入/etc/docker
+                  查看有没有 daemon.json。这是docker默认的配置文件。
+                  如果没有新建，如果有，则修改。
+                  
+                   {
+                     "registry-mirrors": ["https://zfzbet67.mirror.aliyuncs.com"]
+                   }
