@@ -71,6 +71,13 @@
                    {
                      "registry-mirrors": ["https://zfzbet67.mirror.aliyuncs.com"]
                    }
+             6、Docker 常用命令
+                  1.启动docker
+                  sudo service docker start
+                  2.停止docker
+                  sudo service docker stop
+                  3.重启docker
+                  sudo service docker restart      
                    
          wine安装>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
             1、sudo dpkg --add-architecture i386
