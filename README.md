@@ -54,7 +54,7 @@
         
 ## ubuntu20安装软件
       
-      docker安装
+      docker安装 >>>>>>>>>>>>>>>>>>>>>>>>>>>>
             1、安装docker
                   sudo apt install docker.io
             2、创建docker用户组
@@ -71,3 +71,13 @@
                    {
                      "registry-mirrors": ["https://zfzbet67.mirror.aliyuncs.com"]
                    }
+                   
+         wine安装>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            1、sudo dpkg --add-architecture i386
+            2、wget -nc https://dl.winehq.org/wine-builds/winehq.key
+            3、sudo apt-key add winehq.key
+            4、sudo dedit /etc/apt/sources.list 【添加源】
+                  deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main
+            5、sudo apt update
+            6、sudo apt install --install-recommends winehq-stable
+            7、wine -version
