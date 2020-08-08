@@ -88,3 +88,23 @@
             5、sudo apt update
             6、sudo apt install --install-recommends winehq-stable
             7、wine -version
+
+
+## git初始化密码
+
+      在你的用户目录下,用户目录:
+          windows: C:/Users/username
+          mac os x: /Users/username
+          linux: /home/username
+
+
+
+      这里默认你已经安装好了git，首先我们需要在命令行窗口中运行命令：
+            1、git config --global credential.helper store
+            2、vim .git-credentials
+            3、
+                  1>手动记录密码：添加内容（这里以github为例）https://{username}:{password}@github.com
+                  2>自动记录密码：直接运行命名git pull，这时会让你输入用户名的密码，在你输入了正确的用户名和密码后，下次再运行git pull或者git push的时候就会发现再也不用输入用户名和密码了。
+
+
+
