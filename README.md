@@ -49,7 +49,8 @@
             
             ========内容结束=========================================================================================
             
-        4.启动服务：sudo service kafka start
+        4.刷新服务systemctl daemon-reload
+        5.启动服务：sudo service kafka start
         
         
 ## ubuntu20安装软件
