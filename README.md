@@ -1,12 +1,15 @@
 # ubuntu
-## windows10子系统
-      子系统导入导出
-             https://blog.csdn.net/sinat_32596537/article/details/87524071
-             https://www.cnblogs.com/ahmczsy/p/10544926.html
-      
-      WSL 服务自动启动的正确方法
-            https://zhuanlan.zhihu.com/p/47733615
 
+## netstat命令使用
+
+      netstat -anptc
+            a:显示所有连线中的Socket
+            n:直接使用IP地址，而不通过域名服务器
+            p:显示正在使用Socket的程序识别码和程序名称
+            t:显示TCP传输协议的连线状况
+            c:持续显示
+
+      netstat -anpt |grep -i "7070" |wc -l
 
 ## ubuntu18安装mysql修改root默认密码
       https://blog.csdn.net/qq_38737992/article/details/81090373
